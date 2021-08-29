@@ -49,7 +49,7 @@ if __name__ == '__main__':
         auc = roc_auc_score(y_test, y_pred)
 
         mlflow.log_param("n_estimators", 100)
-        mlflow.log_param("max_depth", max_depth)
+        mlflow.log_param("max_depth", depth)
         mlflow.log_param("max_features", 'log2')
 
         mlflow.log_metric("accuracy", accuracy)
